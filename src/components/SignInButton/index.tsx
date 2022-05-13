@@ -4,9 +4,7 @@ import { FiX } from 'react-icons/fi'
 // signIn é a função que faz autenticação do usuário.
 import { signIn, signOut, useSession } from 'next-auth/react'
 
-export const SignInButton = () => {
-  const isUserLoggedIn = true
-  // Estou desestruturando data de useSession e renomeando ela para session.
+export const SignInButton = () => {// Estou desestruturando data de useSession e renomeando ela para session.
   const { data: session } = useSession()
 
   console.log('session:', session)
